@@ -17,6 +17,9 @@ public class TestListCity {
     }
 
     @Test
+    /**
+     * this function is sued to test add
+     */
     public void addCityTest(){
         int listSize = list.getCount();
         list.addCity(new City("Halifax", "NS"));
