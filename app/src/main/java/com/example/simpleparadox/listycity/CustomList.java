@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CustomList extends ArrayAdapter<City> {
 
@@ -67,4 +68,51 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
 
+    /**
+     * This return if the list contains the given city
+     * @param city
+     *  This is a candidate city to check the list
+     * @return
+     *   Return the True if its exist or else False.
+     */
+
+    public boolean hasCity(City city){
+        if (cities.contains(city)){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+
+    /**
+     * This remove a city from the list if the city exist
+     * @param city
+     *   This is a candidate city to remove
+     */
+
+    public void delete(City city){
+        if (cities.contains(cities)){
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
+    }
+
+    /**
+     * This count the number of the city in the list.
+     * @return
+     */
+
+    public boolean countCity() {
+        List<City> list = cities;
+        int count = list.size();
+        //return count;
+        System.out.println("here is the count" + count);
+        return false;
+    }
+
+
 }
+
+
